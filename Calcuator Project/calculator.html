@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rahul Calculator project</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+       <input type="text" id="display" readonly>
+       <div id="button-container">
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = '';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">c</button>
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '1';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">1</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '2';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">2</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '+';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">+</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '3';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">3</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '4';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">4</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '-';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">-</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '5';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">5</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '6';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">6</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '*';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">*</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '7';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">7</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '8';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">8</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '/';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">/</button>
+
+        <button class="calculator-button" onclick="
+       CurrentDesplayValue = eval(CurrentDesplayValue);
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">=</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '9';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">9</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '0';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">0</button>
+
+        <button class="calculator-button" onclick="CurrentDesplayValue = CurrentDesplayValue + '.';
+        document.querySelector('#display').value= CurrentDesplayValue;
+        ">.</button>
+       </div>
+    </div>
+
+    <script>
+        let CurrentDesplayValue =''
+        document.querySelector('#display').value= CurrentDesplayValue;
+    </script>
+</body>
+</html>
